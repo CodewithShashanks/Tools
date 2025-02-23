@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pro Image Compressor</title>
+  <link rel="stylesheet" href="../assets/styles/image-compressor.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Pro Image Compressor</h1>
+    <p>Upload an image to compress and reduce file size.</p>
+
+    <!-- File Upload -->
+    <div class="upload-section">
+      <input type="file" id="image-upload" accept="image/*">
+      <label for="image-upload" class="upload-label">Choose Image</label>
+    </div>
+
+    <!-- Compression Options -->
+    <div class="options">
+      <label for="quality">Compression Quality (0-100):</label>
+      <input type="range" id="quality" min="0" max="100" value="80">
+      <span id="quality-value">80</span>
+    </div>
+
+    <!-- Preview and Download -->
+    <div class="preview-section">
+      <h2>Preview</h2>
+      <div class="image-container">
+        <img id="preview-image" src="#" alt="Preview">
+      </div>
+      <button id="download-btn" disabled>Download Compressed Image</button>
+    </div>
+
+    <!-- File Info -->
+    <div class="file-info">
+      <p>Original Size: <span id="original-size">-</span></p>
+      <p>Compressed Size: <span id="compressed-size">-</span></p>
+      <p>Compression Ratio: <span id="compression-ratio">-</span></p>
+    </div>
+  </div>
+
+  <script src="../assets/scripts/image-compressor.js"></script>
+</body>
+</html>
