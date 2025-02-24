@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word to PDF Converter</title>
+  <link rel="stylesheet" href="Tools/assets/styles/word-to-pdf.css">
+  <link rel="stylesheet" href="Tools/styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Word to PDF Converter</h1>
+      <nav>
+        <ul>
+          <li><a href="Tools/index.html">Back to Dashboard</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h2 id="h2">Convert Word to PDF</h2>
+      <form id="upload-form">
+        <input type="file" id="word-upload" name="wordFile" accept=".docx" required>
+        <button type="submit" id="convert-btn">Convert to PDF</button>
+      </form>
+      <div id="loading" style="display: none;">Converting... Please wait.</div>
+    </div>
+  </main>
+
+  <script src="Tools/assets/scripts/word-to-pdf.js"></script>
+</body>
+</html>
